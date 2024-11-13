@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSec</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header id="container" class="container">
+    <img src="img/logo.png" class="ImgLogo">
+
+    <nav class="navs-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Serviços</a>
+      <a href="suport.html">Suporte</a>
+    </nav>
+
+    <!-- Div para conta e idioma -->
+    <div class="BoxConta">
+      <a id="linkConta" href="login.html">
+        <div class="login" id="DivConta">
+          <p class="texto_conta">Minha Conta</p>
+        </div>
+      </a>
+      <div id="Web2">
+        <img class="ImgWeb" src="img/web.png">
+        <p class="textoWeb">PT-BR</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bloco 1 -->
+  <div class="bloco1">
+    <h1 class="titulo_bloco1">JM SECURITY</h1>
+    <img src="img/ImgBloco1.jpg" class="ImgBloco1">
+    <p class="texto_bloco1">
+      A CyberSec é uma empresa especializada em cybersecurity, oferecendo soluções robustas para proteger tanto empresas
+      quanto indivíduos contra ameaças digitais. Com uma abordagem personalizada, a CyberSec oferece serviços como
+      auditoria de segurança, monitoramento de redes e proteção contra ataques cibernéticos, garantindo a segurança de
+      dados sensíveis e a continuidade dos negócios. Seja para pequenas empresas ou grandes corporações, a empresa
+      proporciona a tranquilidade necessária para navegar no ambiente digital com confiança.
+    </p>
+  </div>
+
+  <!-- Bloco 2: Cards de Planos -->
+  <div class="bloco2">
+    <h2 class="TituloBloco2">Selecione o plano certo para você </h2>
+    <div class="card-flip">
+
+      <!-- Card Prata -->
+      <div class="card1" onclick="flipcard(this)">
+        <div class="card-front">
+          <h2 class="titulobloco2">PRATA</h2>
+          <button>Saiba mais</button>
+        </div>
+        <div class="card-back">
+          <span class="valor1">99.90R$</span>
+          <ul>
+            <li>Análise de vulnerabilidade mensal</li>
+            <li>Firewall básico para proteção de redes</li>
+            <li>Treinamento de conscientização em segurança para funcionários</li>
+            <li>Relatório trimestral de ameaças</li>
+          </ul>
+          <button id="butaon1" class="compra">COMPRAR</button>
+        </div>
+      </div>
+
+      <!-- Card Gold -->
+      <div class="card2" onclick="flipcard(this)">
+        <div class="card-front">
+          <h2 class="titulobloco2">GOLD</h2>
+          <button>Saiba mais</button>
+        </div>
+        <div class="card-back">
+          <span class="valor2">199.90R$</span>
+          <ul>
+            <li>Monitoramento em tempo real 24/7</li>
+            <li>Secure VPN sem registro de logs</li>
+            <li>Proteção avançada contra ransomware</li>
+            <li>Relatórios de ameaças e recomendações de segurança mensais</li>
+          </ul>
+          <button id="butaon2" class="compra">COMPRAR</button>
+        </div>
+      </div>
+
+      <!-- Card Platina -->
+      <div class="card3" onclick="flipcard(this)">
+        <div class="card-front">
+          <h2 class="titulobloco2">PLATINA</h2>
+          <button>Saiba mais</button>
+        </div>
+        <div class="card-back">
+          <span class="valor3">399.90R$</span>
+          <ul>
+            <li>Análise de comportamento de usuários e proteção contra ameaças internas</li>
+            <li>Resposta a incidentes com suporte especializado</li>
+            <li>Monitoramento avançado de redes com análise de tráfego</li>
+            <li>Auditoria de segurança semestral</li>
+          </ul>
+          <button id="butaon3" class="compra">COMPRAR</button>
+        </div>
+      </div>
+
+      <!-- Card Diamante -->
+      <div class="card4" onclick="flipcard(this)">
+        <div class="card-front">
+          <h2 class="titulobloco2">DIAMANTE</h2>
+          <button>Saiba mais</button>
+        </div>
+        <div class="card-back">
+          <span class="valor4">499.90R$</span>
+          <ul>
+            <li>Proteção contra ameaças avançadas (APT) com inteligência artificial</li>
+            <li>Red Teaming (testes de penetração simulados) trimestrais</li>
+            <li>Backup e recuperação de desastres automatizados</li>
+            <li>Consultoria de segurança contínua e relatórios de risco em tempo real</li>
+          </ul>
+          <button id="butaon4" class="compra">COMPRAR</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!--div  hidden ---------------------------------->
+  <div id="vendas1" class="vendas1">
+    <img src="img/casa.svg" class="Imgcasa" id="Imgcasa">
+    <h3 class="tituloHiden1">99.90R$</h3>
+    <p class="subtitulo">Plano PRATA</p>
+    <ul class="lista-card">
+      <li>Análise de vulnerabilidade mensal</li>
+      <li>Firewall básico para proteção de redes</li>
+      <li>Treinamento de conscientização em segurança para funcionários</li>
+      <li>Relatório trimestral de ameaças</li>
+    </ul>
+    <form onsubmit="return redirecionar() ">
+      <div>
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" required="">
+      </div>
+
+      <div>
+        <label for="email">Email:</label><br>
+
+        <input type="email" id="email" name="email" required="">
+      </div>
+
+      <div>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required="">
+      </div>
+      <div>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00" required="">
+        <div id="cpfError" class="error"></div>
+      </div>
+      <div class="BoxTermos">
+
+        <input type="checkbox" id="termos" name="termos" required=""> <label id="texto2" for="avaliacao">
+          Aceito os Termos de Serviço
+        </label><br>
+      </div>
+
+      <input type="submit" value="COMPRAR" id="cadastra">
+
+    </form>
+  </div>
+  <!--card2=========================-->
+  <div id="vendas2" class="vendas1">
+    <img src="img/casa.svg" class="Imgcasa" id="Imgcasa2">
+    <h3 class="tituloHiden2">199.90R$</h3>
+    <p class="subtitulo">Plano GOLD</p>
+    <ul class="lista-card">
+      <li>Monitoramento em tempo real 24/7</li>
+      <li>Secure VPN sem registro de logs</li>
+      <li>Proteção avançada contra ransomware</li>
+      <li>Relatórios de ameaças e recomendações de segurança mensais</li>
+    </ul>
+    <form onsubmit="return redirecionar2()">
+      <div>
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome2" name="nome" required="">
+      </div>
+
+      <div>
+        <label for="email">Email:</label><br>
+
+        <input type="email" id="email" name="email" required="">
+      </div>
+
+      <div>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required="">
+      </div>
+      <div>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00" required="">
+        <div id="cpfError" class="error"></div>
+      </div>
+      <div class="BoxTermos">
+
+        <input type="checkbox" id="termos" name="termos" required=""> <label id="texto2" for="avaliacao">
+          Aceito os Termos de Serviço
+        </label><br>
+      </div>
+
+      <input type="submit" value="COMPRAR" id="cadastra2">
+
+    </form>
+  </div>
+  <!--card3------------------------->
+  <div id="vendas3" class="vendas1">
+    <img src="img/casa.svg" class="Imgcasa" id="Imgcasa3">
+    <h3 class="tituloHiden3">399.90R$</h3>
+    <p class="subtitulo">Plano PLATINA</p>
+    <ul class="lista-card">
+      <li>Análise de comportamento de usuários e proteção contra ameaças internas</li>
+      <li>Resposta a incidentes com suporte especializado</li>
+      <li>Monitoramento avançado de redes com análise de tráfego</li>
+      <li>Auditoria de segurança semestral</li>
+    </ul>
+    <form onsubmit="return redirecionar3() ">
+      <div>
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome3" name="nome" required="">
+      </div>
+
+      <div>
+        <label for="email">Email:</label><br>
+
+        <input type="email" id="email" name="email" required="">
+      </div>
+
+      <div>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required="">
+      </div>
+      <div>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00" required="">
+        <div id="cpfError" class="error"></div>
+      </div>
+      <div class="BoxTermos">
+
+        <input type="checkbox" id="termos" name="termos" required=""> <label id="texto2" for="avaliacao">
+          Aceito os Termos de Serviço
+        </label><br>
+      </div>
+
+      <input type="submit" value="COMPRAR" id="cadastra3">
+
+    </form>
+  </div>
+  <!--card4 ---->
+  <div id="vendas4" class="vendas1">
+    <img src="img/casa.svg" class="Imgcasa" id="Imgcasa4">
+    <h3 class="tituloHiden4">499.90R$</h3>
+    <p class="subtitulo">Plano DIAMANTE</p>
+    <ul class="lista-card">
+      <li>Proteção contra ameaças avançadas (APT) com inteligência artificial</li>
+      <li>Red Teaming (testes de penetração simulados) trimestrais</li>
+      <li>Backup e recuperação de desastres automatizados</li>
+      <li>Consultoria de segurança contínua e relatórios de risco em tempo real</li>
+    </ul>
+    <form onsubmit="return redirecionar4() ">
+      <div>
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome4" name="nome" required="">
+      </div>
+
+      <div>
+        <label for="email">Email:</label><br>
+
+        <input type="email" id="email" name="email" required="">
+      </div>
+
+      <div>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required="">
+      </div>
+      <div>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00" required="">
+        <div id="cpfError" class="error"></div>
+      </div>
+      <div class="BoxTermos">
+
+        <input type="checkbox" id="termos" name="termos" required=""> <label id="texto2" for="avaliacao">
+          Aceito os Termos de Serviço
+        </label><br>
+      </div>
+
+      <input type="submit" value="COMPRAR" id="cadastra4">
+
+    </form>
+  </div>
+  <!--=====================================-->
+  <!-- Bloco 3: Preferências -->
+  <div class="bloco3">
+    <h2 class="tituloBloco3">POR QUE ESCOLHER A JM SECURITY?</h2>
+    <div class="cardspreferencia">
+      <!-- Card 1 -->
+      <div class="cards1" id="cards1-" onmouseover="expandir(this)" onmouseout="normal(this)">
+        <img src="img/suport.svg" class="img_suport" id="img_suport">
+        <h3>Suporte 24 horas por dia</h3>
+        <p class="textoBloco3">
+          Nosso suporte contínuo garante que sua empresa estará protegida o tempo todo, com monitoramento e resposta a
+          incidentes em tempo real, para que você nunca precise se preocupar com ameaças externas.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="cards1" id="cards2-" onmouseover="expandir(this)" onmouseout="normal(this)">
+        <img src="img/vpn.svg" class="img_suport" id="img_vpn">
+        <h3>Secure VPN</h3>
+        <p class="textoBloco3">
+          Navegue anonimamente e com mais segurança usando uma rede privada virtual (VPN) sem registro em log,
+          oferecendo criptografia de ponta, anonimato, proteção contra hackers e acesso seguro à internet.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="cards1" id="cards3-" onmouseover="expandir(this)" onmouseout="normal(this)">
+        <img src="img/malwre.svg" class="img_suport" id="img_malware">
+        <h3>Monitoramento em tempo real</h3>
+        <p class="textoBloco3">
+          Permitindo que o sistema identifique tentativas de infecção por malware assim que ocorrem, evitando que o
+          malware se espalhe ou cause prejuízos significativos aos sistemas e dados.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="cards1" id="cards4-" onmouseover="expandir(this)" onmouseout="normal(this)">
+        <img src="img/money.svg" class="img_suport" id="img_money">
+        <h3>Mais acessível</h3>
+        <p class="textoBloco3">
+          Nosso suporte contínuo garante que sua empresa estará protegida o tempo todo, com monitoramento e resposta a
+          incidentes em tempo real, para que você nunca precise se preocupar com ameaças externas.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Sobre Nós</h3>
+        <p>A JM Security é uma empresa dedicada a proteger seus dados e garantir a segurança digital. Oferecemos
+          soluções personalizadas para empresas de todos os tamanhos.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="suport.html">Suporte</a></li>
+          <li><a href="privacy.html">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <p>Email: contato@cybersec.com</p>
+        <p>Telefone: +55 21 1234-5678</p>
+        <p>Endereço: Morro da Dita, Jockey, Rio de Janeiro, Brasil</p>
+      </div>
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/mth_g0mes/?next=%2F"><img class="instagram" src="img/instagram.webp" ></a>
+          <a href="https://www.instagram.com/_jhonrr/"><img class="instagram" src="img/instagram.webp" alt="@_jhonrr"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 JM Security. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

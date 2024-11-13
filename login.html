@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="logo.css" rel="stylesheet" type="text/css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <a href="index.html">
+    <img src="img/casa.svg" class="Imgcasa">
+  </a>
+  <div class="cabeca">
+    <h1> Criar Conta</h1>
+
+    <form onsubmit="return redirecionar()">
+
+      <div>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div>
+        <label for="email">Email:</label><br>
+
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="confirmar-email">Confirmar Email:</label><br>
+        <input type="email" id="confirmar-email" name="confirmar-email" required>
+      </div>
+      <div>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required>
+      </div>
+
+      <div>
+        <label for="confirmar-senha">Confirmar Senha:</label><br>
+        <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+      </div>
+
+      <div>
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento" required>
+      </div>
+
+      <div class="BoxTermos">
+
+        <input type="checkbox" id="termos" name="termos" required> <label id="texto2" for="avaliacao">
+          Aceito os Termos de Serviço
+        </label><br>
+
+
+        <input type="checkbox" id="termos" name="politica" required>
+        <label id="texto1" for="termos"> Aceito a Política de Privacidade
+        </label>
+      </div>
+
+      <input type="submit" value="Cadastrar" id="cadastra">
+
+    </form>
+  </div>
+  <script src="logo.js"></script>
+</body>
+
+</html>

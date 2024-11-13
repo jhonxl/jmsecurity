@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  background-image: url(img/matrix.jpg);
+  font-family: 'Arial', sans-serif;
+
+}
+
+body {
+  width: auto;
+  height: 1150px;
+}
+
+.cabeca {
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  border: 5px solid #2a2828;
+  width: 600px;
+  height: 1000px;
+  margin-bottom: 100px;
+  background-color: #1b1818;
+  border-radius: 10px;
+  background-image: url(img/fundoConta.jpg);
+}
+
+h1 {
+  color: white;
+  margin-top: 30px;
+}
+
+form {
+  position: absolute;
+  margin-top: 150px;
+}
+
+label {
+  font-size: 20px;
+  color: white;
+}
+
+input {
+  font-size: 18px;
+  height: 25px;
+  width: 280px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#data-nascimento {
+  width: 100px;
+  font-size: 14px;
+}
+
+#cadastra {
+  margin-left: 76px;
+  font-size: 20px;
+  height: 50px;
+  margin-top: 120px;
+  width: 150px;
+  cursor: pointer;
+}
+
+#texto1 {
+  margin-left: -110px;
+}
+
+#texto2 {
+  margin-left: -110px;
+}
+
+#termos {
+  margin-left: -131px;
+}
+
+.BoxTermos {
+  margin-top: 50px;
+}
+
+.Imgcasa {
+  width: 71px;
+  height: 56px;
+  margin-top: 0;
+  background-color: black;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+
+.Imgcasa:hover {
+  box-shadow: 0 0 20px 10px rgb(164, 164, 173, 0.7);
+}

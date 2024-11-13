@@ -1,0 +1,667 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+
+}
+body{
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+ 
+}
+body.blureed .bloco2,body.blureed .bloco1,body.blureed .bloco3, body.blureed footer{
+  
+  filter: blur(5px);
+}
+body.burr .bloco2,body.burr .bloco1,body.burr .bloco3, body.burr footer{
+
+  filter: none;
+}
+body
+body.blureed .vendas1{
+
+  z-index: 1000;
+}
+header{
+  position:fixed;
+  z-index: 10;
+  top: 0; 
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  height: 110px;
+  background-color: #000000;
+}
+
+
+.ImgLogo {
+  margin-left: -120px;
+position: relative;
+  height: 300px;
+  width: auto;
+}
+
+
+.navs-links {
+
+  display: flex;
+  gap: 20px;
+}
+
+.navs-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+
+}
+
+.navs-links a:hover {
+  background-color: #0d93a5;
+  border-radius: 10px;
+
+
+}
+
+
+.BoxConta{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.9s;
+}
+
+
+.login { 
+  text-align: center;
+  height: 40px;
+  width: 120px;
+  color: white;
+  border: 3px solid #0d93a5;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#linkConta{
+  text-decoration: none;
+}
+
+.texto_conta {
+  margin: 0;
+
+}
+
+.login:hover {
+  cursor: pointer;
+
+}
+
+.ImgWeb {
+  height: 50px;
+  width: 50px;
+ transition: color 0.3;
+  margin-top: -1px;
+  cursor: pointer;
+}
+#Web2{
+ display: flex;
+  justify-content: center;
+  width: 104px;
+}
+.textoWeb{
+  color: white;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0px;
+}
+.bloco1{
+  padding: 0px 20px 0px 20px;
+  margin-top: 106px;
+  
+}
+.ImgBloco1{
+  width: 100%;
+  height: 500px;
+}
+.titulo_bloco1{
+  position: absolute;
+  margin-top: 58px;
+  margin-left: 76px;
+  font-size: 43px;
+  font-family: serif;
+  color: white;
+
+  }
+.texto_bloco1{
+position: absolute;
+margin-top: -359px;
+width: 582px;
+font-size: 21px;
+margin-left: 71px;
+  font-family: monospace;
+}
+/*cards do 2 bloco========================================================*/
+.bloco2{
+  text-align: center;
+  width: auto;
+  height: 800px;
+  margin: 80px 20px 20px 20px;
+  background: rgba(173, 216, 230, 0.5);
+  perspective: 1500px;
+  position: relative;
+   border-radius: 20px;
+
+}
+.TituloBloco2 {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: sans-serif;
+  position: absolute;
+  margin-left: 440px;
+}
+
+
+.card-flip {
+  margin-left: 140px;
+  margin-right: 30px;
+  width: 1200px;
+  height: 600px;
+  perspective: 1500px;
+  gap: 20px;
+  margin-top: 162px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 350px;
+  height: 600px;
+position: relative;
+  transform-style: preserve-3d; /* Garante a preservação do layout 3D */
+  transition: transform 1s ease-in-out; /* Transição suave para a rotação */
+  transform-origin: center center; /* A rotação acontece no centro do card */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinha o conteúdo dentro do card */
+  margin: 0 auto; /* Garante que o card permaneça centralizado */
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* O verso não será visível durante a rotação */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.card-back {
+  transform: rotateY(180deg); /* O verso do card começa rotacionado */
+}
+
+.card1.flipped,
+.card2.flipped,
+.card3.flipped,
+.card4.flipped {
+  transform: rotateY(180deg); /* Rotaciona o card ao ser clicado */
+}
+
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza os conteúdos dentro do card */
+  border-radius: 20px;
+  background-color: black;
+}
+
+.card-back {
+  transform: rotateY(180deg); /* Inicia com o verso virado */
+}
+
+/* Outros estilos permanecem os mesmos */
+
+
+
+.titulobloco2{
+text-align:center;
+top:0;
+}
+/*=====================================BLOCO 3-REFERENCIAS============================================*/
+.bloco3{
+  height: 600px;
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: rgba(173, 216, 230, 0.5);
+  margin-top: 80px;
+  position: relative;
+  margin-bottom: 80px;
+  border-radius: 20px;
+}
+.tituloBloco3{
+  margin-left: 47px;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-top: 70px;
+  color: black;
+  position: absolute;
+
+}
+.cardspreferencia{
+  width: 1240px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 170px 30px 0px 120px;
+  position: absolute;
+
+}
+.cards1{
+ display:flex;
+text-align:center;
+ flex-direction: column;
+  position:relative;
+  width: 290px;
+  height: 300px;
+  border:2px solid black;
+border-radius: 20px;
+  background-color:rgb(199, 199, 199);
+  transition: transform 0.6s, box-shadow 0.6s 
+}
+.img_suport{
+  margin-left:115px;
+ margin-top:20px;
+  width:60px;
+  height:60px;
+
+
+}
+.textoBloco3{
+  padding:10px
+}
+.cards1:hover{
+  background-color:black;
+  color:rgb(255, 255, 255);
+}
+
+.card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Alinha o conteúdo verticalmente */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center; /* Garante que o título fique centralizado */
+}
+
+.card-front h2 {
+  margin: 0; /* Remove margens que possam afetar a posição */
+  
+}
+
+.card1 .titulobloco2 {
+  color: silver; /* Cor prata para o título PRATA */
+}
+
+.card2 .titulobloco2 {
+  color: gold; /* Cor ouro para o título GOLD */
+}
+
+.card3 .titulobloco2 {
+  color: #e5e4e2; /* Cor platina (um tom suave de cinza metálico) para o título PLATINA */
+}
+
+.card4 .titulobloco2 {
+  color: #b9f2ff; /* Cor diamante (azul claro brilhante) para o título DIAMANTE */
+}
+
+
+.card-front button {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 20px 0 0; /* Ajuste para um espaçamento adequado entre título e botão */
+  width: auto; /* Impede que o botão ocupe toda a largura disponível */
+  height: 45px; /* Define uma altura fixa */
+  padding: 0.6em 1.2em; /* Reduzir padding */
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  min-width: 120px; /* Largura mínima para o botão */
+}
+
+
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+
+.card-back li {
+  margin-top: 20px;
+  margin-right: 50px;
+  color: white;
+  font-size: 16px; /* Tamanho de fonte menor */
+  line-height: 1.5;
+  padding: 10px 0;
+  transform: translateY(-20px);
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+
+/*buttão de compra*/
+.compra{
+  position: absolute;
+  margin-top: 455px;
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+   
+    width: auto; /* Impede que o botão ocupe toda a largura disponível */
+    height: 45px; /* Define uma altura fixa */
+    padding: 0.6em 1.2em; /* Reduzir padding */
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    min-width: 120px; /* Largura mínima para o botão */
+  }
+.compra:hover {
+  color: #fff;
+  background-color: #0d6591;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+/*===================================*/
+span{
+  color: white;
+  margin-top: -471px;
+  margin-left: -15px;
+  position: absolute;
+  font-size: 50px;
+  font-family: fantasy;
+  }
+.valor1{
+  color: silver;
+}
+.valor2{
+color:gold;
+}
+.valor3{
+   color: #e5e4e2; 
+}
+.valor4{
+   color: #b9f2ff; 
+}
+.vendas1 ,.vendas2,.vendas3,.vendas4{
+  width: 1310px;
+  height: 500px;
+  background: linear-gradient(135deg, #000000, #1a1a1a, #333333);
+  position: absolute;
+  margin-top: -653px;
+  margin-left: 120px;
+  visibility: hidden;
+  transition: visibility 0.4s, opacity 1.5s;
+  opacity: 0;
+  z-index: 1000;
+  border-radius: 20px;
+  
+}
+form{
+  position: absolute;
+  margin-left: 503px;
+  margin-top: 50px;
+}
+label{
+  font-size: 20px;
+  color: #e8e8e8;
+}
+input{
+  font-size: 18px;
+  height: 25px;
+  width: 280px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#termos{
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+}
+#cadastra{
+  margin-top: 51px;
+  width: 276px;
+  height: 62px;
+}
+#cadastra2{
+  margin-top: 51px;
+  width: 276px;
+  height: 62px;
+}
+#cadastra3{
+  margin-top: 51px;
+  width: 276px;
+  height: 62px;
+}
+#cadastra4{
+  margin-top: 51px;
+  width: 276px;
+  height: 62px;
+}
+.tituloHiden1{
+  position: absolute;
+  font-size: 60px;
+  font-family: fantasy;
+  margin: auto;
+  margin-left: 23px;
+   color: silver;
+
+}
+.lista-card{
+  position: absolute;
+  margin-top: 176px;
+  margin-left: 29px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px 0;
+  transform: translateY(-20px);
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  width: 361px;
+}
+.subtitulo{
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  margin-top: 94px;
+  margin-left: 41px;
+}
+.tituloHiden2{
+  position: absolute;
+  font-size: 60px;
+  font-family: fantasy;
+  margin: auto;
+  margin-left: 23px;
+   color: gold;
+
+}
+
+.tituloHiden3{
+  position: absolute;
+  font-size: 60px;
+  font-family: fantasy;
+  margin: auto;
+  margin-left: 23px;
+   color: #e5e4e2;
+
+}
+
+.tituloHiden4{
+  position: absolute;
+  font-size: 60px;
+  font-family: fantasy;
+  margin: auto;
+  margin-left: 23px;
+   color: #b9f2ff; 
+
+}
+.Imgcasa{
+  position: absolute;
+  width: 71px;
+  height: 56px;
+  margin-top: 10px;
+  margin-left: 1220px;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+.Imgcasa:hover {
+    box-shadow: 0 0 20px 10px rgb(164, 164, 173, 0.7); 
+}
+.instagram{
+  width: 40px;
+  height: 40px;
+}
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 1rem;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #4ca1af;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #4ca1af;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid #4ca1af;
+  padding-top: 1rem;
+}
