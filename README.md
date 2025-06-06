@@ -16,8 +16,8 @@ Este projeto é um site de cybersecurity desenvolvido como parte do trabalho da 
 - **JavaScript**: Funcionalidades interativas e validação de formulários.
 
 #### Como Executar o Projeto
-Você pode acessar o site por esse link:
-[https://jhonxl.github.io/jmsecurity/](https://jhonxl.github.io/web2/)
+Você pode acessar o site por esse link:[
+https://jhonxl.github.io/web2/index.html
 
 #### Licença
 Este projeto é licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
