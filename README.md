@@ -16,7 +16,7 @@ Este projeto é um site de cybersecurity desenvolvido como parte do trabalho da 
 - **JavaScript**: Funcionalidades interativas e validação de formulários.
 
 #### Como Executar o Projeto
-Você pode acessar o site por esse link:[
+Você pode acessar o site por esse link:
 https://jhonxl.github.io/web2/index.html
 
 #### Licença
